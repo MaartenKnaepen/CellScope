@@ -1,0 +1,9 @@
+[theme]
+primaryColor = "#7289da"  # Light purple
+backgroundColor = "#f3f4f6"  # Light gray
+secondaryBackgroundColor = "#ffffff"  # White
+textColor = "#2c3e50"  # Dark gray
+font = "sans-serif"
+
+[layout]
+sidebarWidth = 300
