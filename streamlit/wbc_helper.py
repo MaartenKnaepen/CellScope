@@ -26,7 +26,7 @@ class WBC_Helper:
     
 
     def detect(self, image, model):
-        results = model.predict(source=image, hide_labels=True, hide_conf=True, conf=0.4, show=True)
+        results = model.predict(source=image)
         return results[0].plot(),results
         
 
