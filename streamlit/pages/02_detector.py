@@ -1,6 +1,7 @@
 import streamlit as st
 from wbc_helper import WBC_Helper
 from PIL import Image
+from pathlib import Path
 
 # Create an instance of WBC_Helper
 helper = WBC_Helper()

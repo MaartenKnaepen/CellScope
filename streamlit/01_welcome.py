@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-
+from pathlib import Path
 
 # Load the image for the page icon
 page_icon_image = Image.open('streamlit/images/logo.jpg')

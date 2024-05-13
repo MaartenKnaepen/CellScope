@@ -6,11 +6,15 @@ from fastai.vision.all import *
 import os
 import cv2
 import numpy as np
+import pathlib
 
 class WBC_Helper:
     @staticmethod
     @st.cache_data()
     def load_model(repo_id, revision, name, model_type):
+        
+        plt = platform.system()
+        if plt != 'Windows':  pathlib.WindowsPath = pathlib.PosixPath
         model_path = snapshot_download(repo_id, revision=revision)
         model_file = os.path.join(model_path, name)
         
