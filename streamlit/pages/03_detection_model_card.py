@@ -33,7 +33,7 @@ The model is hosted on [Hugging Face](https://huggingface.co/MKnaepen/WBC_detect
             """)
 
 st.header("Confusion Matrix")
-st.image('streamlit\images\confusion_matrix_normalized.png')
+st.image('streamlit/images/confusion_matrix_normalized.png')
 st.markdown("""
 This confusion matrix highlights the model's strong performance in classifying basophils (14/15), neutrophils (105/108), eosinophils (74/80), lymphocytes (40/45), and monocytes (40/46). 
 Some misclassifications across cell types as background still occur. 
@@ -41,14 +41,14 @@ Some misclassifications across cell types as background still occur.
 """)
 
 st.header("Precision-Recall Curve")
-st.image('streamlit\images\PR_curve.png')
+st.image('streamlit/images/PR_curve.png')
 st.markdown("""
 The precision-recall curve shows the trade-off between precision and recall for the model. The model performs well, with an average precision of 0.95. 
 The curve is close to the top right corner, indicating high precision and recall across the classes.
 """)
 
 st.header("F1-Curve")
-st.image('streamlit\images\F1_curve.png')
+st.image('streamlit/images/F1_curve.png')
 st.markdown("""
 The F1 curve shows the F1 score for the model across different confidence points. 
             The model performs well with an F1-score  of approximately 90% for confidence values from 0.1 to 0.9. 
@@ -56,14 +56,14 @@ The F1 curve shows the F1 score for the model across different confidence points
 """)
 
 st.header("Loss functions")
-st.image("streamlit\images/results.png")
+st.image("streamlit/images/results.png")
 st.markdown("""
 This graph shows that validation losses for multiple metrics converge after approximately 50 epochs. 
             The model's performance is consistent across different metrics, indicating that the model is not overfitting to the training data.
 """)
 
 st.header("Labels and boxes")
-st.image("streamlit\images\labels.jpg")
+st.image("streamlit/images/labels.jpg")
 st.markdown("""
 The top left graph shows the distribution between different labels. 
 The top right graph shows the size and shape of the detected bounding boxes. 
